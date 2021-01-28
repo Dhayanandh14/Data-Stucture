@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+class Node{
+     int data;
+     Node* address;
+     public:
+
+     Node(){
+       data=0;
+       address=NULL;
+     }
+     Node(int a){
+       data=a;
+       address=NULL;
+     }
+     Node(Node* c){
+       data=0;
+       address=c;
+     }
+     Node(int a , Node* c){
+       data=a;
+       address=c;
+     }
+     int getData(){
+       return data;
+     }
+     void set(int v){
+       data=v;
+     }
+     next(){
+       address=c
+     }
+     void link(Node* n){
+        address=n;
+     }
+     ~Node(){
+       cout<<data<<" Deleted"<<endl;
+     }
+
+
+     
+};
+int main(){
+    Node* l1 = new Node();
+    Node* l2 = new Node(10);
+    Node* l3 = new Node(l1);
+    Node* l4 = new Node(10,l1);
+    delete l1;
+    delete l2;
+    delete l3;
+    delete l4;
+}
